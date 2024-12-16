@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form method="get" action="" autocomplete="off">
+        <fieldset>
+            <center><h1>Telengana State Road Transport Corporation</h1>
+            <h2>General Buss Pass Application</h2></center>
+        </fieldset>
+        <fieldset>
+            <legend>Applicant details</legend>
+            <label for="name">Name</label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="text" name="name" id="name" required maxlength="20" pattern="[a-zA-Z]+" autocomplete="off">
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label for="father name">Father's/Guardian's name</label>
+            &emsp;&emsp;&emsp;
+            <input type="text" name="father name" id="father name" required pattern="[a-zA-Z]+" autocomplete="off"> <br> <br>
+            <label for="dob">Date of birth</label>
+            &emsp;&emsp;&emsp;&emsp;
+            <input type="date" name="dob" id="dob" required autocomplete="off">
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label for="">Gender</label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="radio" id="female" name="gender" value="Female" required> <label for="female">Female</label>
+            <input type="radio" id="male" name="gender" value="Male" required> <label for="male">Male</label> <br> <br>
+            <label for="age">age as on:</label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="years" id="age" name="age" required autocomplete="o" pattern="">
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label for="aadhar">Aadhar No:</label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="text" id="aadhar" name="aadhar" maxlength="12" minlength="12" title="enter aadhar no:" required
+                autocomplete="off" pattern="\d{12}"> <br> <br>
+            <label for="wtsapp">whatsapp No:</label>
+            &emsp;&emsp;&emsp;&emsp;
+            <input type="text" id="wtsapp" name="whatsappno" required title="+91 is required" autocomplete="off"
+                pattern="\+91[6789]\d{9}">
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <label for="email">email id</label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="mail" id="email" name="email" required title="add@" autocomplete="off"
+                pattern="[a-zA-Z0-9]+\@"> <br> <br>
+            <label for="photo">photo:</label>
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            <input type="file" id="photo" name="photo" required>
+        </fieldset> <br>
+
+        <fieldset>
+            <legend>Residential address details</legend>
+            <label for="address">applicant address</label>
+            <textarea name="address" id="address" required autocomplete="off" maxlength="20"></textarea> <br> <br>
+            <label for="district">district</label>
+            <select>
+                <option id="district" value="select">select</option>
+                <option id="district" value="hyderabad">hyderbad</option>
+            </select> <br> <br>
+            <label for="mandal">mandal</label>
+            <select>
+                <option id="mandal" value="select">select</option>
+                <option id="mandal" value="hyderabad">hyderbad</option>
+            </select> <br> <br>
+            <label for="village">village</label>
+            <select>
+                <option id="village" value="select">select</option>
+                <option id="village" value="hyderabad">hyderbad</option>
+            </select> <br> <br>
+            <label for="pincode">pincode</label>
+            <input type="text" id="pincode" name="pincode" required title="enter crt pin" autocomplete="off"
+                minlength="6" maxlength="6" pattern="[0-9]+">
+        </fieldset>
+<br>
+        <fieldset>
+            <legend>pass type details</legend> <br>
+            <label for="city">city</label>
+            <select>
+                <option id="city" value="hyderabad">hyderabad</option>
+            </select> <br> <br>
+            <label for="pass type">pass type</label>
+            <select>
+                <option id="passtype" value"select">select</option>
+                <option value="greater pass">GREATER PASS</option>
+                <option value="route">GENERAL ORDINARY ROUTE PASS MTLY</option>
+                <option value="metro">GENERAL METRO EXPRESS ROUTE PASS MTLY</option>
+                <option value="ordinary">ORDINARY PASS</option>
+                <option value="express">METRO EXPRESS PASS</option>
+                <option value="delux">METRO DELUX PASS</option>
+            </select>
+        </fieldset>
+        &emsp;
+        <fieldset>
+            <legend>mode of payment&pass collection</legend> <br>
+            <label for="paymode">payment mode</label>
+            <select>
+                <option value="paymode">select payment mode</option>
+                <option value="counter">payment at counter</option>
+            </select> <br> <br>
+            <label for="pass delivery">pass delivery mode</label>
+            <select>
+                <option value="pass delivery">select pass delivery mode</option>
+                <option value="pass delivery">at counter</option>
+            </select> <br> <br>
+            <label for="collect">center at which you want to collect pass</label>
+            <select><option value="select">select</option>
+            <option value="ibp">RTC-IBP</option>
+            <option value="uppal">RTC-UPPAL</option>
+            <option value="lb nagar">RTC-LB NAGAR</option></select>
+        </fieldset>
+        <center>
+            <img src="captcha.png" alt="captcha">
+            <input type="submit"></center>
+    </form>
+
+
+</body>
+
+</html>
