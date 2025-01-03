@@ -1,0 +1,89 @@
+/* task 3.1 */
+
+.outer-box{
+    width:300px;
+    height: 300px;
+border: 5px solid black;
+position: relative;
+}
+.inner-box{
+    width: 200px;
+    height: 200px;
+    border:3px solid pink;
+    bottom: 50px;
+    right:50px; 
+    position: absolute;
+}
+
+/* task3.2 */
+.card{
+width:300px;
+height: 300px;
+border:5px solid black;
+position: relative;
+}
+.icon{
+width:200px;
+height:200px;
+border:3px solid pink;
+position: absolute;
+bottom:0px;
+right:0px;
+}
+
+/* task 3.3 */
+.tooltip-container{
+    width:300px;
+    height:300px;
+    border:3px solid black;
+    position:relative;
+
+}
+.button{
+    top:50px;
+    right:130px;
+    border:3px solid black;
+position: absolute;
+}
+.tooltip{
+top:20px;
+right:120px;
+    border:2px solid red;
+position: absolute;
+}
+
+/* task3.4 */
+.avatar-container{
+    width: 300px;
+    height: 300px;
+border:5px solid black;
+position:relative
+}
+.avatar{
+border: 1px solid red;
+}
+.badge{
+border:3px solid pink;
+position:absolute;
+top:0px;
+right:0px;
+}
+
+/* task3.5 */
+.image-container{
+    border: 3px solid black;
+width:300px;
+height:300px;
+position: relative;
+}
+.image{
+border:2px solid red;
+}
+.overlay{
+    width: 300px;
+    height:300px;
+    border:2px solid green;
+    position:absolute;
+    top:0px;
+    
+}
